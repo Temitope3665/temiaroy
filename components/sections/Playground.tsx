@@ -92,7 +92,7 @@ export function Playground() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Featured Blog Post */}
-          <Link href="/writing/post-covid-tech-economy-trap">
+          <Link href="/blog/post-covid-tech-economy-trap">
             <motion.div 
               variants={fadeIn}
               className="group relative overflow-hidden rounded-3xl bg-foreground/[0.03] border border-foreground/5 p-8 flex flex-col justify-between hover:bg-foreground/[0.05] transition-all duration-500 cursor-pointer h-full"

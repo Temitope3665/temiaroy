@@ -66,7 +66,9 @@ export const metadata = {
   description: 'This is a web application for Temitope Aroyewon Portfolio',
 };
 
-export default function RootLayout({ children }) {
+import { SmoothScroll } from '../components/layout/SmoothScroll';
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
@@ -74,7 +76,9 @@ export default function RootLayout({ children }) {
         <title>Temitope Aroyewon Portfolio</title>
       </head>
       <body className={cn('font-sans', gilroyFont.variable)}>
+        <SmoothScroll>
           {children}
+        </SmoothScroll>
       </body>
     </html>
   );

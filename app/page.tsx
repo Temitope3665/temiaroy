@@ -76,7 +76,12 @@ export default function Home() {
     <main className="min-h-screen bg-background text-foreground transition-colors duration-500 selection:bg-primary/20">
       <Header time={time} />
 
-      <div className="max-w-[700px] mx-auto px-8 pt-8 pb-28 space-y-24">
+      <motion.div 
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+        className="max-w-[700px] mx-auto px-8 pt-8 pb-28 space-y-24"
+      >
         <Hero 
           volumeLevel={volumeLevel} 
           setVolumeLevel={setVolumeLevel} 
@@ -86,12 +91,12 @@ export default function Home() {
         
         <Work />
         
+        <Thoughts />
+
         <Playground />
         
-        <Thoughts />
-        
         <Stack />
-      </div>
+      </motion.div>
 
       <Footer time={time} />
 

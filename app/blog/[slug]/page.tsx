@@ -1,11 +1,12 @@
 'use client'
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef, use } from 'react';
 import { motion, AnimatePresence, useScroll, useSpring } from 'framer-motion';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { Home, ArrowLeft, VolumeX, Volume1, Volume2, Moon, Sun } from 'lucide-react';
 
-export default function WritingPage({ params }: { params: { slug: string } }) {
+export default function WritingPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = use(params);
   const router = useRouter();
   const [volumeLevel, setVolumeLevel] = useState(0);
   const [isDarkMode, setIsDarkMode] = useState(true);

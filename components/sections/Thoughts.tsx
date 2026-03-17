@@ -49,7 +49,7 @@ export function Thoughts() {
           readTime="5 min read"
           href='https://medium.com/@aroyewontope/morra-game-introducing-wager-using-reach-421e03a950e5'
         />
-        <ThoughtItem 
+        {/* <ThoughtItem 
           title="Single Deadline Crowdfunding Campaign Using Reach" 
           date="Sep 2022" 
           readTime="5 min read"
@@ -60,7 +60,7 @@ export function Thoughts() {
           date="Jul 2022" 
           readTime="2 min read"
           href='https://medium.com/@aroyewontope/javascript-math-min-and-math-max-functions-a-better-approach-805df7ab34b2'
-        />
+        /> */}
       </div>
     </motion.section>
   );

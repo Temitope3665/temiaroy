@@ -85,7 +85,7 @@ export function Hero({ volumeLevel, setVolumeLevel, isDarkMode, setIsDarkMode }:
           I care deeply about craft — the kind you notice when it&apos;s done right, and miss when it&apos;s not.
         </p>
         <p>
-          Currently, I contract for <span className="font-bold underline decoration-2 underline-offset-4 text-foreground/90">MTN Nigeria</span> as a frontend engineer, 
+          I work with <span className="font-bold underline decoration-2 underline-offset-4 text-foreground/90">MTN Nigeria</span> as a frontend engineer, 
           building and maintaining large-scale internal platforms and customer-facing applications.
         </p>
         <p>
